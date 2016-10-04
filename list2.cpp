@@ -11,6 +11,12 @@ public:
 	~middle() { std::cout <<"~middle\n";}
 };
 
+class derived : public middle {
+public:
+	derived() {std::cout << "derived\n";}
+	~derived(){std:: cout << "~derived\n";}
+};
+
 int main() {
 	derived d;
 }
