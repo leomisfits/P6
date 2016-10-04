@@ -38,7 +38,7 @@ class book : public work{
 
 class periodical: public work{
     public:
-    periodical() : work{}, volume_{0}, number_{0}, date{} {}
+    periodical() : work{}, volume_{0}, number_{0}, date_{} {}
     periodical(string const& id, string const& title, int volume, int number, string const& date)
     : work{id, title}, volume_{volume}, number_{number}, date_{date} {}
     int volume() const { return volume_; }
@@ -46,12 +46,11 @@ class periodical: public work{
     string const& date() const { return date_; }
     void print(ostream& out) const override {
         out << title() << ", " << volume() << "( " << number() << "), " << date() << ".";
-    
+    }
     private:
     int volume_;
     int number_;
     string date_;
-    }
-};
+    };
 
 int main() {}
