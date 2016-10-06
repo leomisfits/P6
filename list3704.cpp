@@ -10,7 +10,7 @@ base(base const& copy)
 {std::cout<<"copybase(" << value_<< ")\n";}
 ~base(){std::cout<<"~base("<< value_<< ")\n";}
 
-int value()const{returnvalue_;}
+int value()const{return value_;}
 base& operator++()
 {
 ++value_;
@@ -36,7 +36,7 @@ return derived{42};
 
 base increment(base b){
 ++b;
-returnb;
+return b;
 }
 
 void increment_reference(base& b){
