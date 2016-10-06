@@ -54,3 +54,6 @@ Na linha "increment_reference(b);", b é incrementado, por referência, e passa 
 Na linha "derived a(d.value()+b.value());", é feito a soma de d.value e b.value, resultando em 87. Por isso são impressas as linhas "base(87)" e "derived(87)".
 
 Por fim, todos os destrutores são ativados na ordem inversa das chamadas dos métodos.
+
+4)  Os erros apontados pelo compilador derivam do fato de quando a classe derived é declarada, ela não consegue herdar os
+métodos da classe base.
