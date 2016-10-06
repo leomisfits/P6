@@ -26,4 +26,5 @@
 Em linhas gearais, eo que este programa é capaz de fazer é inicializar variáveis por meio da função make_derived() presente na 
 classe "filha" derived. Ele também é capaz de incrementar valores de uma variável atrelada a uma das classes filhas da clase 
 principal(clase base), como mostrado no segundo comando da função main, além de incrementar eferências
-(mostrado no terceiro comando e quarto comando) e fazer soma dos valores de a e b (quinto comando).
+(mostrado no terceiro comando e quarto comando) e fazer soma dos valores de a e b (quinto comando). Veja abaixo uma explicação 
+mais detalhada: 
