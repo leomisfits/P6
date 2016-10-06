@@ -21,3 +21,9 @@
   E isso nos mostra que a classe derived constroi primeiro as classes que herdou, começando de base, para middle e finalmente
   derived e quando tratamos dos destrutores, a ordem é o inversa, destruindo a classe com especificidades primeiro e as classes
   que herdou por último, assim destruindo derived depois middle e por último base.
+
+3) 
+Em linhas gearais, eo que este programa é capaz de fazer é inicializar variáveis por meio da função make_derived() presente na 
+classe "filha" derived. Ele também é capaz de incrementar valores de uma variável atrelada a uma das classes filhas da clase 
+principal(clase base), como mostrado no segundo comando da função main, além de incrementar eferências
+(mostrado no terceiro comando e quarto comando) e fazer soma dos valores de a e b (quinto comando).
