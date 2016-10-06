@@ -28,3 +28,29 @@ classe "filha" derived. Ele também é capaz de incrementar valores de uma vari�
 principal(clase base), como mostrado no segundo comando da função main, além de incrementar eferências
 (mostrado no terceiro comando e quarto comando) e fazer soma dos valores de a e b (quinto comando). Veja abaixo uma explicação 
 mais detalhada: 
+
+Espera-se as seguintes saídas, que é exatamente a saída após a compilação do código:
+"base(42)
+derived(42)
+copybase(42)
+copybase(43)
+~base(43)
+base(87)
+derived(87)
+~derived(87)
+~base(87)
+~base(44)
+~derived(43)
+~base(43)"
+
+Na linha "derived d{make_derived()};" são impressos "base(42)" e "derived(42)" e, posteriormente, foi impresso "~derived(43)" e "~base(43)" que é resultado da chamada dos destrutores.
+
+Na linha "base b{increment(d)};", o método increment é invocado com o valor 42 e retorna o valor 43 para b. Porém, como a passagem de valor é por referência, o construtor por cópia é ativado, imprimindo "copybase(42)", "copybase(43)" e "~base(43)".
+
+Na linha "increment_reference(d);" d é incrementado, por referência, e passa a valer 43.
+
+Na linha "increment_reference(b);", b é incrementado, por referência, e passa a valer 44.
+
+Na linha "derived a(d.value()+b.value());", é feito a soma de d.value e b.value, resultando em 87. Por isso são impressas as linhas "base(87)" e "derived(87)".
+
+Por fim, todos os destrutores são ativados na ordem inversa das chamadas dos métodos.
