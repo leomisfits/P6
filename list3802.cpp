@@ -1,4 +1,4 @@
-void showoff (word const& w) {
+void showoff (work const& w) {
 	w.print(std::cout);
 	std::cout << '\n';
 }
