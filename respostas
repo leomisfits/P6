@@ -75,3 +75,6 @@ ostream& operator<<(ostream& o, work& w)
     return o;
 }
 //vou add o .cpp 
+
+9)
+http://i.imgur.com/jlEKMyp.png
