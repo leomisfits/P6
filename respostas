@@ -57,3 +57,12 @@ Por fim, todos os destrutores são ativados na ordem inversa das chamadas dos m�
 
 4)  Os erros apontados pelo compilador derivam do fato de quando a classe derived é declarada, ela não consegue herdar os
 métodos da classe base.
+
+5)
+c)
+ostream& operator<<(ostream& o, work& w)
+{
+    w.print(o);
+    return o;
+}
+//vou add o .cpp 
