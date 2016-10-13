@@ -65,7 +65,10 @@ que eles foram criados. No caso dos livros, o primeiro dado é o título do livr
 No caso dos periódicos, o primeiro dado é o nome do periódico, seguido dos números da edição e, depois, da data de publicação.
 
 
-b)
+b) A Palavra reservada "virtual" denota que há uma função (ou método) logo após ela que pode ser herdada nas classes derivadas
+posteriormente. A palavra reservada "override" é usada imediatamente após a declaração de uma função e garante que que a 
+função é virtual e está herdando uma função virtual da classe base. 
+
 
 
 c)
