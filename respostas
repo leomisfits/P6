@@ -70,14 +70,17 @@ posteriormente. A palavra reservada "override" é usada imediatamente após a de
 função é virtual e está herdando uma função virtual da classe base. 
 
 
-
 c)
 ostream& operator<<(ostream& o, work& w)
 {
     w.print(o);
     return o;
 }
-//vou add o .cpp 
+// adicionei o .cpp
+
+d) Caso modifiquemos a função "void showoff (work const& w)" para "void showoff (work w)", o output mostrado não será mais
+o visto anteriormente, e sim um monte de linhas vazias. Isto ocorre porque a função deixa de receber os valores passados por
+referência e os dados dos livros e periódicos não são mais passados para a função. 
 
 9)
 http://i.imgur.com/jlEKMyp.png
