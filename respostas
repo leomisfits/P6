@@ -59,6 +59,15 @@ Por fim, todos os destrutores são ativados na ordem inversa das chamadas dos m�
 métodos da classe base.
 
 5)
+
+a) Espera-se que o programa imprima na tela os dados dos livros e periódicos criados na função main na mesma ordem em
+que eles foram criados. No caso dos livros, o primeiro dado é o título do livro, seguido do nome do autor e do ano da publicação.
+No caso dos periódicos, o primeiro dado é o nome do periódico, seguido dos números da edição e, depois, da data de publicação.
+
+
+b)
+
+
 c)
 ostream& operator<<(ostream& o, work& w)
 {
